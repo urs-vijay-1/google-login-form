@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding:40px;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+}
+
+#logo{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+h2{
+    margin: 0;
+    margin-left: 3px;
+    color: #202124;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+}
+.inputbox input{
+    width: 93%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+}
+.inputbox label{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 10px 0;
+    color: grey;
+}
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -18px;
+    left: 10px;
+    font-size: 12px;
+    height: 10px;
+    padding-left: 5px ;
+    padding-right: 5px;
+    background: white;
+
+}
+
+.inputbox input:focus{
+    outline: none;
+    border: 2px solid #1a73e8;
+}
+
+.forgot{
+    display: block;
+}
+button{
+    text-align: left;
+    background:none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #1a73e8;
+    padding-bottom: 30px;
+    top: 0%;
+    cursor: pointer;
+}
+.input{
+    text-align: center;
+}
+.signin input{
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 7px 13px;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    padding-bottom: -20px;
+}
+.signin input:hover{
+    background-color: #3085f4;
+    color: #fff;
+    border: 2px solid #1a73e8;
+}
